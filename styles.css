@@ -7,10 +7,57 @@ body {
 h1 {
     color: #333;
     .container {
+   /* Container untuk menata elemen */
+.container {
     display: flex; /* Menggunakan Flexbox */
     flex-direction: column; /* Mengatur arah kolom */
-    align-items: center; /* Mengatur elemen di tengah secara horizontal */
-    justify-content: center; /* Mengatur elemen di tengah secara vertikal */
+    align-items: center; /* Menyelaraskan objek di tengah */
+    justify-content: center; /* Menyelaraskan objek secara vertikal */
     height: 100vh; /* Mengatur tinggi wadah 100% dari viewport */
+    text-align: center; /* Mengatur teks di tengah */
+    background-color: #f4f4f4; /* Warna latar belakang */
 }
+
+/* Gaya untuk judul */
+h1 {
+    font-size: 2.5em; /* Ukuran font */
+    color: #333; /* Warna teks */
+    margin-bottom: 20px; /* Jarak bawah */
+}
+
+/* Gaya untuk gambar */
+img {
+    width: 300px; /* Lebar gambar */
+    height: auto; /* Tinggi otomatis untuk menjaga proporsi */
+    border-radius: 10px; /* Sudut membulat pada gambar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek kedalaman */
+    margin-bottom: 20px; /* Jarak bawah gambar */
+}
+
+/* Gaya untuk tombol */
+.button {
+    background-color: #4CAF50; /* Warna latar belakang hijau */
+    color: white; /* Warna teks putih */
+    padding: 10px 20px; /* Ruang di dalam tombol */
+    text-align: center; /* Teks di tengah */
+    text-decoration: none; /* Tanpa garis bawah */
+    display: inline-block; /* Menampilkan sebagai blok */
+    font-size: 16px; /* Ukuran font */
+    margin-top: 10px; /* Jarak atas tombol */
+    border: none; /* Tanpa border */
+    border-radius: 5px; /* Sudut membulat */
+    cursor: pointer; /* Kursor sebagai pointer */
+    transition: background-color 0.3s; /* Transisi untuk efek hover */
+}
+
+/* Gaya saat tombol di-hover */
+.button:hover {
+    background-color: #45a049; /* Warna saat hover */
+}
+
+/* Gaya untuk link yang tidak diinginkan */
+.button:active {
+    background-color: #3e8e41; /* Warna saat tombol ditekan */
+}
+
 }
