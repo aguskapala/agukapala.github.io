@@ -4,7 +4,13 @@ body {
     padding: 20px;
     background-color: #f0f0f0;
 }
-
 h1 {
     color: #333;
+    .container {
+    display: flex; /* Menggunakan Flexbox */
+    flex-direction: column; /* Mengatur arah kolom */
+    align-items: center; /* Mengatur elemen di tengah secara horizontal */
+    justify-content: center; /* Mengatur elemen di tengah secara vertikal */
+    height: 100vh; /* Mengatur tinggi wadah 100% dari viewport */
+}
 }
