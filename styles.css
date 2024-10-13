@@ -1,29 +1,8 @@
-body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.container {
-    position: relative;
-    padding: 20px; /* Jarak dari tepi */
-}
-
-.custom-button {
-    background-color: #4CAF50; /* Warna tombol */
-    color: white; /* Warna teks */
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.button-icon {
-    width: 20px; /* Ukuran gambar */
-    height: 20px; /* Ukuran gambar */
-    margin-right: 8px; /* Jarak antara gambar dan teks */
-}
+//
+// This file is meant to regroup your design customizations. For example, doing
+// this will separate your footer with a dotted border using your primary color.
+//
+// footer {
+//     border-top: 5px dotted map-get($theme-colors, 'primary');
+// }
+//
