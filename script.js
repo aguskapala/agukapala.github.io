@@ -1,3 +1,4 @@
 function ubahTeks() {
-    document.getElementById("content").innerText = "Teks telah diubah!";
+    const section = document.querySelector('#home p');
+    section.innerText = "Teks telah diubah! Selamat datang di dunia interaktif.";
 }
