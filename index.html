@@ -1,97 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mineplace | Free Minecraft Marketplace Download</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f3f3f3;
-        color: #555;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .header {
-        font-size: 1.8em;
-        font-weight: bold;
-        color: #888;
-        text-align: center;
-        margin: 30px;
-    }
-
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-end;
-        gap: 20px;
-        position: relative;
-    }
-
-    .device {
-        position: relative;
-        width: 200px;
-        height: 120px;
-        background-color: #e3e3e3;
-        border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-    }
-
-    .device img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
-
-    .character {
-        position: absolute;
-        width: 40px;
-        height: 40px;
-    }
-
-    .character1 { top: -20px; left: 10px; }
-    .character2 { top: 10px; right: 30px; }
-    .character3 { bottom: 10px; left: 80px; }
-    .character4 { bottom: -20px; right: 60px; }
-    .character5 { top: -10px; right: -30px; }
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mineplace | Free Minecraft Marketplace</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Mineplace | Free Minecraft Marketplace Download</h1>
+    <div class="hero-images">
+      <img src="1.png" alt="Minecraft devices and characters">
+    </div>
+  </section>
 
-<div class="header">Mineplace | free minecraft marketplace download.</div>
+  <!-- About Section -->
+  <section class="about">
+    <h2>About Mineplace</h2>
+    <div class="features">
+      <div class="feature">
+        <img src="2.png" alt="Minecraft addon image">
+        <h3>Addons</h3>
+        <p>A Minecraft addon is a modification that allows players to add, change, or remove elements in the game.</p>
+        <a href="#">→</a>
+      </div>
+      <div class="feature">
+        <img src="2.png" alt="Minecraft mods image">
+        <h3>Mods</h3>
+        <p>Mods (modifications) are changes made to the game Minecraft to add, alter, or remove existing features.</p>
+        <a href="#">→</a>
+      </div>
+      <div class="feature">
+        <img src="2.png" alt="More modifications">
+        <h3>And More</h3>
+        <p>More and more and moree.</p>
+        <a href="#">→</a>
+      </div>
+    </div>
+  </section>
 
-<div class="container">
-    <div class="device">
-        <img src="tablet-image-placeholder.png" alt="Tablet">
-        <img src="character1.png" class="character character1" alt="Character 1">
+  <!-- Download Section -->
+  <section class="download">
+    <h2>Here you can download!!</h2>
+    <p>Download cokk gasken</p>
+    <button onclick="window.location.href='#'">Download</button>
+    <div class="socials">
+      <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+      <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+      <a href="#"><img src="tumblr-icon.png" alt="Tumblr"></a>
     </div>
-    <div class="device">
-        <img src="switch-image-placeholder.png" alt="Switch">
-        <img src="character2.png" class="character character2" alt="Character 2">
-    </div>
-    <div class="device">
-        <img src="xbox-image-placeholder.png" alt="Xbox">
-        <img src="character3.png" class="character character3" alt="Character 3">
-    </div>
-    <div class="device">
-        <img src="laptop-image-placeholder.png" alt="Laptop">
-        <img src="character4.png" class="character character4" alt="Character 4">
-    </div>
-    <div class="device">
-        <img src="mobile-image-placeholder.png" alt="Mobile">
-        <img src="character5.png" class="character character5" alt="Character 5">
-    </div>
-</div>
-
+  </section>
 </body>
 </html>
