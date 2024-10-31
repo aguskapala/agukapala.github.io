@@ -1,8 +1,94 @@
-//
-// This file is meant to regroup your design customizations. For example, doing
-// this will separate your footer with a dotted border using your primary color.
-//
-// footer {
-//     border-top: 5px dotted map-get($theme-colors, 'primary');
-// }
-//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mineplace | Free Minecraft Marketplace Download</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f3f3f3;
+        color: #555;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        margin: 20px 0;
+        font-size: 2em;
+        font-weight: bold;
+        color: #888;
+        text-align: center;
+    }
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .device {
+        position: relative;
+        width: 200px;
+        height: 120px;
+        background-color: #e3e3e3;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .device img {
+        max-width: 90%;
+        border-radius: 10px;
+    }
+
+    .character {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+    }
+
+    .character1 {
+        top: -10px;
+        left: 10px;
+    }
+
+    .character2 {
+        top: 20px;
+        right: 10px;
+    }
+
+    .character3 {
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+</style>
+</head>
+<body>
+
+<div class="header">Mineplace | free minecraft marketplace download.</div>
+
+<div class="content">
+    <div class="device">
+        <img src="tablet-view.png" alt="Minecraft on Tablet">
+        <img src="character1.png" class="character character1" alt="Minecraft Character 1">
+    </div>
+    <div class="device">
+        <img src="switch-view.png" alt="Minecraft on Switch">
+        <img src="character2.png" class="character character2" alt="Minecraft Character 2">
+    </div>
+    <div class="device">
+        <img src="xbox-view.png" alt="Minecraft on Xbox">
+        <img src="character3.png" class="character character3" alt="Minecraft Character 3">
+    </div>
+</div>
+
+</body>
+</html>
