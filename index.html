@@ -1,62 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stunning Web Design</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome, Mineplace</title>
+  <style>
+    body {
+      background-color: #222;
+      color: #fff;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    .circle {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-bottom: 2rem;
+    }
+
+    .circle::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+    }
+
+    .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3rem;
+      font-weight: bold;
+      color: #FFA500;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+  </style>
 </head>
 <body>
-
-<!-- Header -->
-<header>
-    <nav class="navbar">
-        <div class="logo">MyBrand</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button class="cta-button">Get Started</button>
-    </nav>
-</header>
-
-<!-- Hero Section -->
-<section id="home" class="hero">
-    <div class="hero-content">
-        <h1>Welcome to Mineplace</h1>
-        <p>Discover our features and explore the addons, mods and more about that.</p>
-        <button class="hero-button">Learn More</button>
-    </div>
-</section>
-
-<!-- Features Section -->
-<section id="features" class="features">
-    <h2>Our Features</h2>
-    <div class="features-container">
-        <div class="feature">
-            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.minecraft.net%2Fen-us%2Fmarketplace%2Fpdp%3Fid%3Dcd927ddf-5334-4b9a-8be4-b2cd0c57004f&psig=AOvVaw31FR1Y5tfXn0-xUQCfwg_9&ust=1730555041843000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPDG-IWiu4kDFQAAAAAdAAAAABAE" alt="Feature 1">
-            <h3>Feature 1</h3>
-            <p>Explanation of this awesome feature.</p>
-        </div>
-        <div class="feature">
-            <img src="https://via.placeholder.com/100" alt="Feature 2">
-            <h3>Feature 2</h3>
-            <p>Details about this amazing feature.</p>
-        </div>
-        <div class="feature">
-            <img src="https://via.placeholder.com/100" alt="Feature 3">
-            <h3>Feature 3</h3>
-            <p>Description of this incredible feature.</p>
-        </div>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer>
-    <p>&copy; 2024 MyBrand. All rights reserved.</p>
-</footer>
-
+  <h1>Welcome, <span class="circle">
+    <span class="text">Mineplace</span>
+  </span></h1>
+  <p>Discover mods, addons and more about that.</p>
 </body>
 </html>
