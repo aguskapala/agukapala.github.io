@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Utilities Add-On</title>
+    <title>LemonPie Login</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="addon-container">
-    <div class="title">WORLD UTILITIES</div>
-    <div class="features">
-        <div class="feature">
-            <img src="https://via.placeholder.com/100" alt="Vein Miner">
-            <p>VEIN MINER</p>
-        </div>
-        <div class="feature">
-            <img src="https://via.placeholder.com/100" alt="Tools">
-            <p>TOOLS</p>
-        </div>
-        <div class="feature">
-            <img src="https://via.placeholder.com/100" alt="Tree Capitator">
-            <p>TREE CAPITATOR</p>
-        </div>
+<div class="login-container">
+    <div class="logo">
+        <img src="https://via.placeholder.com/80" alt="LemonPie Logo">
     </div>
-    <div class="add-on">Add-On</div>
-    <div class="new-update">NEW UPDATE</div>
-    <button class="download-btn" onclick="downloadAddon()">Download</button>
+    <h1>Welcome to LemonPie!</h1>
+    <p class="subtitle">Keep your data safe</p>
+    <form class="login-form">
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="janedoe@gmail.com" required>
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password" required>
+            <span class="toggle-password" onclick="togglePassword()">👁️</span>
+        </div>
+        <button type="submit" class="login-button">LOGIN</button>
+        <a href="#" class="forgot-password">Forgot password?</a>
+    </form>
+    <p class="register-link">Don't have an account? <a href="#">Register!</a></p>
 </div>
 
 <script src="script.js"></script>
