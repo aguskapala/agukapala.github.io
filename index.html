@@ -1,15 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mineplace</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome, Mineplace</title>
+  <style>
+    body {
+      background-color: #222;
+      color: #fff;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    .circle {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-bottom: 2rem;
+    }
+
+    .circle::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+    }
+
+    .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3rem;
+      font-weight: bold;
+      color: #FFA500;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1 class="welcome-text">Welcome, <span class="highlight">Mineplace</span></h1>
-        <p class="description">Discover mods, addons and more about that.</p>
-    </div>
+  <h1>Welcome, <span class="circle">
+    <span class="text">Mineplace</span>
+  </span></h1>
+  <p>Discover mods, addons and more about that.</p>
 </body>
 </html>
